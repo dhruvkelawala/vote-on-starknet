@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useReducer } from "react";
 import { List } from "immutable";
 import { TransactionManagerContext } from "./context";
 import { PopupListItem, Transaction, TransactionSubmitted } from "./model";
-import { transactionManagerReducer, TransactionManagerState } from "./reducer";
+import { transactionManagerReducer } from "./reducer";
 import { useStarknet } from "../starknet";
 
 function shouldRefreshTransaction(

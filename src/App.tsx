@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { connect, disconnect } from "get-starknet";
 import { useStarknet } from "./providers/starknet";
 import { VotingStatus } from "./components/VotingStatus";
@@ -27,6 +27,7 @@ function App() {
 
       setAccount(starknetWindowObject?.account);
       setProvider(starknetWindowObject?.provider);
+      setError(undefined);
     } catch (error: any) {
       setError(error);
     }
@@ -57,6 +58,7 @@ function App() {
             <Button bgColor="orange.400" onClick={handleConnectOrDisconnect}>
               Connect
             </Button>
+            {error && <Text>Error: {error}</Text>}
           </>
         )}
       </Flex>

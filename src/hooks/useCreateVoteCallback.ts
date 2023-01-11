@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { stark } from "starknet";
-import { VOTER_CLASS_HASH, VOTER_CONTRACT_ADDRESS } from "../constants";
+import { VOTER_CLASS_HASH } from "../constants";
 import { useStarknet } from "../providers/starknet";
 import { useTransactionManager } from "../providers/transactions";
 

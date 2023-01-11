@@ -1,5 +1,5 @@
 import { Flex, Box, chakra } from "@chakra-ui/react";
-import React, { useCallback, useContext, useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { X } from "react-feather";
 
 import { PopupContent } from "../providers/transactions";

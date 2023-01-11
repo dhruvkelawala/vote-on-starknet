@@ -1,12 +1,4 @@
-import {
-  Button,
-  Flex,
-  Heading,
-  HStack,
-  Input,
-  Text,
-  VStack
-} from "@chakra-ui/react";
+import { Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import { FC, useState } from "react";
 import { number } from "starknet";
 import { useCreateVoteCallback } from "../hooks/useCreateVoteCallback";

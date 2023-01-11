@@ -1,7 +1,4 @@
-import {
-  CommonTransactionReceiptResponse,
-  GetTransactionResponse
-} from "starknet";
+import { CommonTransactionReceiptResponse } from "starknet";
 import { List } from "immutable";
 import {
   PopupContent,
